@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.paulo</groupId>
+  <artifactId>JavaWebApplication</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JavaWebApplication Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+ 
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.13.2</version>
+	    <scope>test</scope>
+	</dependency>
+    
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+	<dependency>
+	    <groupId>jakarta.servlet</groupId>
+	    <artifactId>jakarta.servlet-api</artifactId>
+	    <version>6.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.32</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
+	<dependency>
+	    <groupId>c3p0</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>0.9.1.2</version>
+	</dependency>
+
+  </dependencies>
+  <build>
+	<plugins>
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+        </plugin>
+	</plugins>
+    <finalName>JavaWebApplication</finalName>
+  </build>
+</project>
